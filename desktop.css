@@ -87,6 +87,8 @@ margin-top: -7vh;
 
 .imgt > div{
 width: 40vw;
+height: auto;
+padding-inline: 0;
 }
 
 .container img{
