@@ -67,7 +67,8 @@ margin-right: 8px;
 header > .nav{
 width: 70%;
 height: 100vh;
-position: absolute;
+position: fixed;
+background: thistle;
 border-radius: 0px 0px 2px 0px;
 display: flex;
 flex-direction: column;
@@ -75,10 +76,16 @@ justify-content: flex-start;
 align-items: center;
 padding-top: 30px;
 box-sizing: border-box;
-left: -100%;
+transform: translateX(-70vw);
+z-index: 1;
 }
 
-.nav > span{
+.nav a{
+text-decoration: none;
+color: #1E202D;
+}
+
+.nav span{
 font-size: 17px;
 font-weight: 400;
 margin-bottom: 10px;
@@ -201,9 +208,78 @@ width: 85%;
 height: 35vh;
 border-radius: 20px;
 margin-block: 2vh;
-border: 4px solid #1E202D;
 }
 
 #works img:hover{
-transform: scale(1.2, 1.5);
+transform: scale(1.2, 1.2);
+}
+
+.social{
+width: 90%;
+height: 15vh;
+margin-left: 5vw;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.social > div{
+width: 50px;
+height: 50px;
+font-size: 30px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social > div:hover{
+transform: scale(1.5, 1.5);
+}
+
+.social > div > a{
+align-self: center;
+}
+
+.fb{
+background: #C8E8FA;
+}
+
+.fb > a{
+color: #0060E9;
+}
+
+.wa{
+background: #C8FAD2;
+}
+
+.wa > a{
+color: #01C226;
+}
+
+.gm{
+background: #FAC8C8;
+}
+
+.gm > a{
+color: #FF0000;
+}
+
+.footer{
+width: 100vw;
+height: 15vh;
+background: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer > span{
+font-family: "Poppins";
+color: #1E202D;
+}
+
+.footer > span a{
+color: #00B0FF;
 }
